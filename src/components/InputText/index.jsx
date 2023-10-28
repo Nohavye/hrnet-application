@@ -1,3 +1,4 @@
+// Styles
 import styles from './styles.module.css'
 
 export default function Component({ id, label }) {

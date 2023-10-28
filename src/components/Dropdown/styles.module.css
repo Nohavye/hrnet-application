@@ -1,0 +1,15 @@
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+
+    & label {
+        color: #555555;
+    }
+}
+
+.dropdownWrapper {
+    border: 2px solid red !important;
+    width: 212px !important;
+}

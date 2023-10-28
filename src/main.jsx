@@ -14,8 +14,8 @@ import Home from './pages/home'
 import Employees from './pages/employees'
 
 // Components
-import Header from './components/header'
-import PageWrapper from './components/pageWrapper'
+import Header from './components/Header'
+import PageWrapper from './components/PageWrapper'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
     <Provider store={store}>

@@ -9,7 +9,11 @@ import { actions as employeesActions } from '../../features/employees'
 import { Employee } from '../../entities'
 
 // Components
-import InputText from '../inputText'
+import InputText from '../InputText'
+import Dropdown from '../Dropdown'
+
+// Constants
+import { STATES, DEPARTMENT } from '../../global/constants'
 
 // Component
 export default function Component() {
@@ -52,12 +56,22 @@ export default function Component() {
                         <legend>Address</legend>
                         <InputText id="street" label="Street" />
                         <InputText id="city" label="City" />
-                        <InputText id="state" label="State" />
+                        <Dropdown
+                            id="state"
+                            label="State"
+                            items={STATES}
+                            placeholder="Select state"
+                        />
                         <InputText id="zip-code" label="Zip code" />
                     </fieldset>
                 </div>
             </div>
-            <InputText id="department" label="Department" />
+            <Dropdown
+                id="department"
+                label="Department"
+                items={DEPARTMENT}
+                placeholder="Select department"
+            />
             <button onClick={handleSave}>Save</button>
         </form>
     )
