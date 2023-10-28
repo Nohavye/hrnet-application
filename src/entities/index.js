@@ -1,0 +1,21 @@
+export const Employee = ({
+    firstName,
+    lastName,
+    startDate,
+    department,
+    dateofBirth,
+    street,
+    city,
+    state,
+    zipCode,
+}) => ({
+    'First Name': firstName,
+    'Last Name': lastName,
+    'Start Date': startDate,
+    Department: department,
+    'Date of Birth': dateofBirth,
+    Street: street,
+    City: city,
+    State: state,
+    'Zip Code': zipCode,
+})

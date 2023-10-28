@@ -1,0 +1,54 @@
+@import '../../utils/styles/mixins.css';
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+
+    padding: 60px;
+
+    & h3 {
+        align-self: flex-start;
+    }
+
+    & button {
+        align-self: flex-end;
+    }
+
+    @include parent-wrapper-decoration;
+}
+
+.fieldWrapper {
+    display: flex;
+    gap: 60px;
+
+    > :first-child {
+        margin-top: 50px;
+    }
+}
+
+.division {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    & h3 {
+        color: #333333;
+    }
+}
+
+.group {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px;
+    border-radius: 15px;
+    border: 5px rgba(255, 255, 255, 0.3);
+    border-style: outset;
+
+    & legend {
+        color: #555555;
+        padding: 0 20px;
+    }
+}

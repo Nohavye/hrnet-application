@@ -1,0 +1,4 @@
+@mixin parent-wrapper-decoration {
+    box-shadow: 23px 23px 45px #bebebe, -23px -23px 45px #ffffff;
+    border-radius: 30px;
+}
