@@ -10,6 +10,23 @@
 }
 
 .dropdownWrapper {
-    border: 2px solid red !important;
-    width: 212px !important;
+    padding: 10px 20px;
+    border-style: none;
+    border-radius: 20px;
+    box-shadow: inset 5px 5px 4px #c1c1c1, inset -5px -5px 4px #ffffff;
+    width: 212px;
+}
+
+.dropdownInput {
+    font-size: 13px;
+}
+
+.dropdownItemsWrapper {
+    border: 5px rgba(255, 255, 255, 0.1);
+    border-style: outset;
+    border-radius: 10px;
+}
+
+.dropdownItem {
+    font-size: 12px;
 }

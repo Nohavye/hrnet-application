@@ -372,10 +372,10 @@
   resolved "https://registry.yarnpkg.com/@eslint/js/-/js-8.52.0.tgz#78fe5f117840f69dc4a353adf9b9cd926353378c"
   integrity sha512-mjZVbpaeMZludF2fsWLD0Z9gCref1Tk4i9+wddjRvpUNqqcndPkBD09N/Mapey0b3jaXbLm2kICwFv2E64QinA==
 
-"@hrnet-org/hrnet-component-library@^0.1.4":
-  version "0.1.4"
-  resolved "https://registry.yarnpkg.com/@hrnet-org/hrnet-component-library/-/hrnet-component-library-0.1.4.tgz#8bb52b1f4ca076767132bed1aed46018dbae9279"
-  integrity sha512-vCPx74W7LyTRQbHKqZIhpF+W8/8nv55kCS8Uh+gHOLCx+ih+jSg/CHiCMaElszsEQt+ZXSUeVbUFPr7Fim0S2w==
+"@hrnet-org/hrnet-component-library@^0.1.9":
+  version "0.1.9"
+  resolved "https://registry.yarnpkg.com/@hrnet-org/hrnet-component-library/-/hrnet-component-library-0.1.9.tgz#c260d79961b998af8c4b472fd441c951dd5e8858"
+  integrity sha512-vFYi/Vnq74MMGiPUHbyUcG4GuDbhRUJbaYckjeSIPwR6oxJMPW/G1cgv2xOqSvIoIVIFvLT0jbM/EO3qEcHK1w==
 
 "@humanwhocodes/config-array@^0.11.13":
   version "0.11.13"
