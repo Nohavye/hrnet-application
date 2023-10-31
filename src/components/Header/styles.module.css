@@ -1,8 +1,14 @@
+@import '../../utils/styles/mixins.css';
+
 .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
+
+    & a {
+        @include main-link;
+    }
 }
 
 .left {

@@ -10,25 +10,32 @@
 }
 
 .dropdownWrapper {
+    padding: 0;
+    border-style: none;
+    border-radius: 20px;
+    width: 212px;
+    gap: 10px !important;
+}
+
+.dropdownInput {
     padding: 10px 20px;
     border-style: none;
     border-radius: 20px;
     box-shadow: inset 5px 5px 4px #c1c1c1, inset -5px -5px 4px #ffffff;
-    width: 212px;
+    font-size: 12px;
 
-    &:focus-within {
-        border: 1px solid orange;
+    &:focus {
+        border: 1px solid orange !important;
     }
 }
 
-.dropdownInput {
-    font-size: 12px;
-}
-
 .dropdownItemsWrapper {
-    border: 5px rgba(255, 255, 255, 0.1);
-    border-style: outset;
-    border-radius: 10px;
+    background-color: #e0e0e0;
+    border: 1px solid #666666;
+    border-radius: 20px;
+    padding: 5px 20px;
+    box-shadow: 5px 5px 5px #888888;
+    scrollbar-color: #888888 transparent;
 }
 
 .dropdownItem {

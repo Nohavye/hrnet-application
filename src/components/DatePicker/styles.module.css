@@ -1,0 +1,31 @@
+.wrapper {
+    display: flex;
+    align-items: center;
+
+    & label {
+        display: block;
+        width: 120px;
+        color: #555555;
+    }
+
+    & input {
+        padding: 10px 20px;
+        outline: none;
+        border-style: none;
+        border-radius: 20px;
+        background-color: #e0e0e0;
+        box-shadow: inset 5px 5px 4px #c1c1c1, inset -5px -5px 4px #ffffff;
+
+        &:focus {
+            border: 1px solid orange;
+        }
+    }
+}
+
+.datePicker {
+    background-color: #e0e0e0;
+    border: 1px solid #666666;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 5px 5px 5px #888888;
+}

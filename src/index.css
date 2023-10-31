@@ -19,31 +19,3 @@ body {
 
     min-height: 100vh;
 }
-
-a {
-    box-shadow: 5px 5px 10px #bebebe, -5px -5px 10px #ffffff;
-    padding: 10px 20px;
-    border-radius: 20px;
-    text-decoration: none;
-    color: #555555;
-}
-
-a:hover {
-    box-shadow: inset 5px 5px 4px #c1c1c1, inset -5px -5px 4px #ffffff;
-    color: #333333;
-}
-
-button {
-    box-shadow: 5px 5px 10px #bebebe, -5px -5px 10px #ffffff;
-    padding: 10px 40px;
-    border-radius: 20px;
-    border-style: none;
-    color: #555555;
-    font-size: 14px;
-}
-
-button:hover {
-    box-shadow: inset 5px 5px 4px #c1c1c1, inset -5px -5px 4px #ffffff;
-    background-color: transparent;
-    color: #333333;
-}

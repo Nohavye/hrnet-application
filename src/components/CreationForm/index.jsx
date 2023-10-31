@@ -11,6 +11,7 @@ import { Employee } from '../../entities'
 // Components
 import InputText from '../InputText'
 import Dropdown from '../Dropdown'
+import DatePicker from '../DatePicker'
 
 // Constants
 import { STATES, DEPARTMENT } from '../../global/constants'
@@ -48,8 +49,8 @@ export default function Component() {
                 <div className={styles.division}>
                     <InputText id="first-name" label="First Name" />
                     <InputText id="last-name" label="Last Name" />
-                    <InputText id="date-of-birth" label="Date Of Birth" />
-                    <InputText id="start-date" label="Start Date" />
+                    <DatePicker id="date-of-birth" label="Date Of Birth" />
+                    <DatePicker id="start-date" label="Start Date" />
                 </div>
                 <div className={styles.division}>
                     <fieldset className={styles.group}>
@@ -72,7 +73,9 @@ export default function Component() {
                 items={DEPARTMENT}
                 placeholder="Select department"
             />
-            <button onClick={handleSave}>Save</button>
+            <button className={styles.submitButton} onClick={handleSave}>
+                Save
+            </button>
         </form>
     )
 }
