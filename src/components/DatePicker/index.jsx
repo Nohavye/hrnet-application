@@ -6,7 +6,11 @@ import 'react-datepicker/dist/react-datepicker.css'
 import DatePicker from 'react-datepicker'
 import styles from './styles.module.css'
 
-export default function Component({ id, label }) {
+export default function Component({
+    id,
+    label,
+    placeholder = 'Click to select a date',
+}) {
     const [startDate, setStartDate] = useState(null)
 
     const MyContainer = ({ className, children }) => {
@@ -29,6 +33,7 @@ export default function Component({ id, label }) {
                 showYearDropdown
                 scrollableYearDropdown
                 yearDropdownItemNumber={100}
+                placeholderText={placeholder}
             />
         </div>
     )

@@ -50,23 +50,43 @@ export default function Component() {
                 <h3>Create employee</h3>
                 <div className={styles.fieldWrapper}>
                     <div className={styles.division}>
-                        <InputText id="first-name" label="First Name" />
-                        <InputText id="last-name" label="Last Name" />
+                        <InputText
+                            id="first-name"
+                            label="First Name"
+                            placeholder="Type the first name"
+                        />
+                        <InputText
+                            id="last-name"
+                            label="Last Name"
+                            placeholder="Type the last name"
+                        />
                         <DatePicker id="date-of-birth" label="Date Of Birth" />
                         <DatePicker id="start-date" label="Start Date" />
                     </div>
                     <div className={styles.division}>
                         <fieldset className={styles.group}>
                             <legend>Address</legend>
-                            <InputText id="street" label="Street" />
-                            <InputText id="city" label="City" />
+                            <InputText
+                                id="street"
+                                label="Street"
+                                placeholder="Type the street name"
+                            />
+                            <InputText
+                                id="city"
+                                label="City"
+                                placeholder="Type the city name"
+                            />
                             <Dropdown
                                 id="state"
                                 label="State"
                                 items={Array.from(STATES.keys())}
-                                placeholder="Select state"
+                                placeholder="Click to select a state"
                             />
-                            <InputText id="zip-code" label="Zip code" />
+                            <InputText
+                                id="zip-code"
+                                label="Zip code"
+                                placeholder="Type the zip code"
+                            />
                         </fieldset>
                     </div>
                 </div>
@@ -74,7 +94,7 @@ export default function Component() {
                     id="department"
                     label="Department"
                     items={DEPARTMENT}
-                    placeholder="Select department"
+                    placeholder="Click to select a department"
                 />
                 <button className={styles.submitButton} onClick={handleSave}>
                     Save
