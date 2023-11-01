@@ -1,0 +1,16 @@
+@import '../../utils/styles/mixins.css';
+
+.wrapper {
+    @include modal-wrapper-decoration;
+    padding: 60px 80px 40px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+}
+
+.button {
+    @include main-button;
+}

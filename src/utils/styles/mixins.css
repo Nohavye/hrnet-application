@@ -3,6 +3,13 @@
     border-radius: 30px;
 }
 
+@mixin modal-wrapper-decoration {
+    background-color: #e0e0e0;
+    border: 1px solid #666666;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px #666666;
+}
+
 @mixin main-button {
     box-shadow: 5px 5px 10px #bebebe, -5px -5px 10px #ffffff;
     padding: 10px 40px;
