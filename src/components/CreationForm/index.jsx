@@ -1,12 +1,15 @@
-// Styles
-import styles from './styles.module.css'
+// React
+import { useState } from 'react'
 
 // Redux
 import { useDispatch } from 'react-redux'
-import { actions as employeesActions } from '../../features/employees'
+import { actions } from '../../store'
 
-// Entities
-import { Employee } from '../../entities'
+// Globals
+import { STATES, DEPARTMENT } from '../../global/constants'
+
+// Utils
+import { getFormData } from './utils'
 
 // Components
 import InputText from '../InputText'
@@ -14,33 +17,17 @@ import Dropdown from '../Dropdown'
 import DatePicker from '../DatePicker'
 import MessageModal from '../MessageModal'
 
-// Constants
-import { STATES, DEPARTMENT } from '../../global/constants'
-import { useState } from 'react'
+// Styles
+import styles from './styles.module.css'
 
-// Component
+// CreationForm component
 export default function Component() {
     const dispatch = useDispatch()
     const [messageIsVisible, setMessageIsVisible] = useState(false)
 
     const handleSave = (e) => {
         e.preventDefault()
-
-        const getInput = (id) => document.getElementById(id)
-
-        const employee = Employee({
-            firstName: getInput('first-name').value,
-            lastName: getInput('last-name').value,
-            startDate: getInput('start-date').value,
-            department: getInput('department').value,
-            dateofBirth: getInput('date-of-birth').value,
-            street: getInput('street').value,
-            city: getInput('city').value,
-            state: STATES.get(getInput('state').value),
-            zipCode: getInput('zip-code').value,
-        })
-
-        dispatch(employeesActions.add(employee))
+        dispatch(actions.employees.add(getFormData()))
         setMessageIsVisible(true)
     }
 

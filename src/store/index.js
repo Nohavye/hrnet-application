@@ -1,15 +1,21 @@
+// Redux
 import { configureStore } from '@reduxjs/toolkit'
 import { useSelector } from 'react-redux'
 
-// Reducers
-import { reducer as employeesReducer } from '../features/employees'
+// Features
+import { actions, reducers } from './features'
 
+// Store
 export default configureStore({
     reducer: {
-        employees: employeesReducer,
+        employees: reducers.employees,
     },
 })
 
-export const selectors = {
+// Selectors
+const selectors = {
     Employees: () => useSelector((state) => state.employees),
 }
+
+// Actions, Selectors
+export { actions, selectors }

@@ -1,19 +1,19 @@
-// Styles
-import styles from './styles.module.css'
+// React
+import { useCallback, useMemo, useRef } from 'react'
+
+// Redux
+import { selectors } from '../../store'
+
+// Utils
+import { COLOMN_DEFS } from './utils'
 
 // Ag Grid
 import { AgGridReact } from 'ag-grid-react'
 import 'ag-grid-community/styles/ag-grid.css'
 import 'ag-grid-community/styles/ag-theme-alpine.css'
 
-// Hooks
-import { useCallback, useMemo, useRef } from 'react'
-
-// Redux
-import { selectors } from '../../store'
-
-// Constants
-import { COLOMN_DEFS } from './constants'
+// Styles
+import styles from './styles.module.css'
 
 // Component
 export default function Component() {

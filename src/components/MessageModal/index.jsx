@@ -9,9 +9,7 @@ export default function Component({ message, onButtonClick, visible = false }) {
         <ModalWrapper visible={visible} dimmed>
             <div className={styles.wrapper}>
                 <span>{message}</span>
-                <button className={styles.button} onClick={onButtonClick}>
-                    OK
-                </button>
+                <button onClick={onButtonClick}>OK</button>
             </div>
         </ModalWrapper>
     )
