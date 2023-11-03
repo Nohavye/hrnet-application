@@ -1,4 +1,4 @@
-@import '../../global/styles/mixins.css';
+@import '../../../global/styles/mixins.css';
 
 .header {
     display: flex;

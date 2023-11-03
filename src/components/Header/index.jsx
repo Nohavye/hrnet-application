@@ -1,16 +1,15 @@
-// Styles
-import styles from './styles.module.css'
-
-// Hooks
+// React Router
 import { useLocation } from 'react-router-dom'
-
-// Components
 import { Link } from 'react-router-dom'
 
-// Constants
-import { LOCAL_SETTINGS } from './constants'
+// Utils
+import { LOCAL_SETTINGS } from './utils'
 
-export default function Component() {
+// Styles
+import styles from './styles/styles.module.css'
+
+// Header component
+export default function Header() {
     const { pathname } = useLocation()
 
     return (

@@ -1,6 +1,8 @@
-import styles from './styles.module.css'
+// Styles
+import styles from './styles/styles.module.css'
 
-export default function Component({
+// ModalWrapper component
+export default function ModalWrapper({
     children,
     visible = false,
     dimmed = false,

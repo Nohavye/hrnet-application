@@ -1,10 +1,15 @@
-// Styles
-import styles from './styles.module.css'
-
 // Components
 import ModalWrapper from '../ModalWrapper'
 
-export default function Component({ message, onButtonClick, visible = false }) {
+// Styles
+import styles from './styles/styles.module.css'
+
+// MessageModal component
+export default function MessageModal({
+    message,
+    onButtonClick,
+    visible = false,
+}) {
     return (
         <ModalWrapper visible={visible} dimmed>
             <div className={styles.wrapper}>

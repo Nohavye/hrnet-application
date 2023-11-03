@@ -12,72 +12,78 @@ import { STATES, DEPARTMENT } from '../../global/constants'
 import { getFormData } from './utils'
 
 // Components
-import InputText from '../InputText'
-import Dropdown from '../Dropdown'
-import DatePicker from '../DatePicker'
+import TextInput from '../TextInput'
+import DropdownInput from '../DropdownInput'
+import DatePickerInput from '../DatePickerInput'
 import MessageModal from '../MessageModal'
 
 // Styles
-import styles from './styles.module.css'
+import styles from './styles/styles.module.css'
 
 // CreationForm component
-export default function Component() {
+export default function CreationForm() {
+    // Local State
+    const [modaleVisibility, setModalVisibility] = useState(false)
+
+    // Redux
     const dispatch = useDispatch()
-    const [messageIsVisible, setMessageIsVisible] = useState(false)
 
     const handleSave = (e) => {
         e.preventDefault()
         dispatch(actions.employees.add(getFormData()))
-        setMessageIsVisible(true)
+        setModalVisibility(true)
     }
 
     return (
         <>
             <form className={styles.form}>
                 <h3>Create employee</h3>
-                <div className={styles.fieldWrapper}>
-                    <div className={styles.division}>
-                        <InputText
+                <div className={styles.parentFieldWrapper}>
+                    <div className={styles.childFieldWrapper}>
+                        <TextInput
                             id="first-name"
                             label="First Name"
                             placeholder="Type the first name"
                         />
-                        <InputText
+                        <TextInput
                             id="last-name"
                             label="Last Name"
                             placeholder="Type the last name"
                         />
-                        <DatePicker id="date-of-birth" label="Date Of Birth" />
-                        <DatePicker id="start-date" label="Start Date" />
+                        <DatePickerInput
+                            id="date-of-birth"
+                            label="Date Of Birth"
+                        />
+                        <DatePickerInput id="start-date" label="Start Date" />
                     </div>
-                    <div className={styles.division}>
-                        <fieldset className={styles.group}>
-                            <legend>Address</legend>
-                            <InputText
+                    <fieldset className={styles.fieldSet}>
+                        <legend>Address</legend>
+                        <div className={styles.childFieldWrapper}>
+                            <TextInput
                                 id="street"
                                 label="Street"
                                 placeholder="Type the street name"
                             />
-                            <InputText
+                            <TextInput
                                 id="city"
                                 label="City"
                                 placeholder="Type the city name"
                             />
-                            <Dropdown
+                            <DropdownInput
                                 id="state"
                                 label="State"
                                 items={Array.from(STATES.keys())}
                                 placeholder="Click to select a state"
                             />
-                            <InputText
+                            <TextInput
                                 id="zip-code"
                                 label="Zip code"
                                 placeholder="Type the zip code"
                             />
-                        </fieldset>
-                    </div>
+                        </div>
+                    </fieldset>
                 </div>
-                <Dropdown
+                <DropdownInput
                     id="department"
                     label="Department"
                     items={DEPARTMENT}
@@ -89,8 +95,8 @@ export default function Component() {
             </form>
             <MessageModal
                 message={'Employee Created !'}
-                onButtonClick={() => setMessageIsVisible(false)}
-                visible={messageIsVisible}
+                onButtonClick={() => setModalVisibility(false)}
+                visible={modaleVisibility}
             />
         </>
     )

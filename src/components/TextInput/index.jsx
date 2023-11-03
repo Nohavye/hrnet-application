@@ -1,7 +1,8 @@
 // Styles
-import styles from './styles.module.css'
+import styles from './styles/styles.module.css'
 
-export default function Component({ id, label, placeholder = 'Type text' }) {
+// TextInput component
+export default function TextInput({ id, label, placeholder = 'Type text' }) {
     return (
         <div className={styles.wrapper}>
             {label && <label htmlFor={id}>{label}</label>}

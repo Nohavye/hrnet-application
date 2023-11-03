@@ -1,6 +1,8 @@
-@import '../../global/styles/mixins.css';
+@import '../../../global/styles/mixins.css';
 
 .form {
+    @include parent-wrapper-decoration;
+
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -12,29 +14,21 @@
         align-self: flex-start;
         color: #333333;
     }
-
-    @include parent-wrapper-decoration;
 }
 
-.fieldWrapper {
+.parentFieldWrapper {
     display: flex;
     gap: 60px;
-
-    > :first-child {
-        margin-top: 50px;
-    }
 }
 
-.division {
+.childFieldWrapper {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     gap: 20px;
 }
 
-.group {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+.fieldSet {
     padding: 30px;
     border-radius: 15px;
     border: 5px rgba(255, 255, 255, 0.3);

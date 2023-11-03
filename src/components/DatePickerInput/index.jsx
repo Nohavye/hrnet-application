@@ -1,12 +1,15 @@
-// Styles
+// React
 import { useState } from 'react'
-import 'react-datepicker/dist/react-datepicker.css'
 
 // Components
 import DatePicker from 'react-datepicker'
-import styles from './styles.module.css'
 
-export default function Component({
+// Styles
+import 'react-datepicker/dist/react-datepicker.css'
+import styles from './styles/styles.module.css'
+
+// DatePickerInput component
+export default function DatePickerInput({
     id,
     label,
     placeholder = 'Click to select a date',

@@ -13,10 +13,10 @@ import 'ag-grid-community/styles/ag-grid.css'
 import 'ag-grid-community/styles/ag-theme-alpine.css'
 
 // Styles
-import styles from './styles.module.css'
+import styles from './styles/styles.module.css'
 
-// Component
-export default function Component() {
+// DataGrid component
+export default function DataGrid() {
     const gridRef = useRef()
     const rowData = selectors.Employees()
 

@@ -1,5 +1,7 @@
-import styles from './styles.module.css'
+// Styles
+import styles from './styles/styles.module.css'
 
-export default function Component({ children }) {
+// PageWrapper component
+export default function PageWrapper({ children }) {
     return <div className={styles.wrapper}>{children}</div>
 }

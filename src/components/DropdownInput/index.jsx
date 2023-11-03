@@ -2,9 +2,10 @@
 import { DropdownSelector } from '@hrnet-org/hrnet-component-library'
 
 // Styles
-import styles from './styles.module.css'
+import styles from './styles/styles.module.css'
 
-export default function Component({ id, label, items, placeholder }) {
+// DropdownInput component
+export default function DropdownInput({ id, label, items, placeholder }) {
     return (
         <div className={styles.wrapper}>
             {label && <label htmlFor={id}>{label}</label>}
