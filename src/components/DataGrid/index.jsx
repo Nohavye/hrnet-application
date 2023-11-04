@@ -15,7 +15,9 @@ import 'ag-grid-community/styles/ag-theme-alpine.css'
 // Styles
 import styles from './styles/styles.module.css'
 
-// DataGrid component
+/** The DataGrid component for displaying a grid of current employees.
+ * @returns {JSX.Element} The DataGrid component.
+ */
 export default function DataGrid() {
     const gridRef = useRef()
     const rowData = selectors.Employees()

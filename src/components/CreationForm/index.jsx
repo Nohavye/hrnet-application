@@ -9,7 +9,7 @@ import { actions } from '../../store'
 import { STATES, DEPARTMENT } from '../../global/constants'
 
 // Utils
-import { getFormData } from './utils'
+import { employeeFromForm } from './utils'
 
 // Components
 import TextInput from '../TextInput'
@@ -20,7 +20,9 @@ import MessageModal from '../MessageModal'
 // Styles
 import styles from './styles/styles.module.css'
 
-// CreationForm component
+/** The CreationForm component for creating new employee records.
+ * @returns {JSX.Element} The CreationForm component.
+ */
 export default function CreationForm() {
     // Local State
     const [modaleVisibility, setModalVisibility] = useState(false)
@@ -28,9 +30,12 @@ export default function CreationForm() {
     // Redux
     const dispatch = useDispatch()
 
-    const handleSave = (e) => {
+    /** Handles saving a new employee record.
+     * @param {Event} e - The form submission event.
+     */
+    const handleSaveEmployee = (e) => {
         e.preventDefault()
-        dispatch(actions.employees.add(getFormData()))
+        dispatch(actions.employees.add(employeeFromForm()))
         setModalVisibility(true)
     }
 
@@ -89,7 +94,10 @@ export default function CreationForm() {
                     items={DEPARTMENT}
                     placeholder="Click to select a department"
                 />
-                <button className={styles.submitButton} onClick={handleSave}>
+                <button
+                    className={styles.submitButton}
+                    onClick={handleSaveEmployee}
+                >
                     Save
                 </button>
             </form>

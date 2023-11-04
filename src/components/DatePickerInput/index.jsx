@@ -8,7 +8,14 @@ import DatePicker from 'react-datepicker'
 import 'react-datepicker/dist/react-datepicker.css'
 import styles from './styles/styles.module.css'
 
-// DatePickerInput component
+/** A date picker input component for selecting dates.
+ *
+ * @param {object} props - The component's props.
+ * @param {string} props.id - The unique identifier for the input element.
+ * @param {string} [props.label] - The label to display above the input.
+ * @param {string} [props.placeholder] - The placeholder text for the input.
+ * @returns {JSX.Element} The date picker input component.
+ */
 export default function DatePickerInput({
     id,
     label,
@@ -16,7 +23,7 @@ export default function DatePickerInput({
 }) {
     const [startDate, setStartDate] = useState(null)
 
-    const MyContainer = ({ className, children }) => {
+    const calendarContainer = ({ className, children }) => {
         return (
             <div className={`${className} ${styles.datePicker}`}>
                 <div style={{ position: 'relative' }}>{children}</div>
@@ -31,7 +38,7 @@ export default function DatePickerInput({
                 id={id}
                 selected={startDate}
                 onChange={(date) => setStartDate(date)}
-                calendarContainer={MyContainer}
+                calendarContainer={calendarContainer}
                 popperPlacement="auto"
                 showYearDropdown
                 scrollableYearDropdown
