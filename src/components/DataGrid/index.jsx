@@ -32,7 +32,7 @@ export default function DataGrid() {
 
     return (
         <div className={styles.wrapper}>
-            <h3>Current Employees</h3>
+            <h2>Current Employees</h2>
             <div
                 className="ag-theme-alpine"
                 style={{ width: '100%', height: '100%' }}

@@ -3,6 +3,7 @@
 
 .wrapper {
     @include modal-wrapper-decoration;
+
     padding: 60px 80px 40px;
 
     display: flex;

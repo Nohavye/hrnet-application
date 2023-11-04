@@ -11,7 +11,7 @@
 
     padding: 60px;
 
-    & h3 {
+    & h2 {
         align-self: flex-start;
         color: $soft-black-color;
     }
@@ -42,6 +42,6 @@
 }
 
 .submitButton {
-    align-self: flex-end;
     @include main-button;
+    align-self: flex-end;
 }

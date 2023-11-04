@@ -2,6 +2,8 @@
 @import '../../../global/styles/colors.css';
 
 .wrapper {
+    @include parent-wrapper-decoration;
+
     display: flex;
     flex-direction: column;
     gap: 40px;
@@ -9,7 +11,10 @@
     height: 60vh;
     padding: 30px;
 
-    @include parent-wrapper-decoration;
+    & h2 {
+        align-self: flex-start;
+        color: $soft-black-color;
+    }
 }
 
 .grid {

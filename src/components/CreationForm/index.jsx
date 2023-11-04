@@ -37,7 +37,7 @@ export default function CreationForm() {
     return (
         <>
             <form className={styles.form}>
-                <h3>Create employee</h3>
+                <h2>Create employee</h2>
                 <div className={styles.parentFieldWrapper}>
                     <div className={styles.childFieldWrapper}>
                         <TextInput
