@@ -1,15 +1,16 @@
 @import './colors.css';
+@import './shadows.css';
 
 @mixin parent-wrapper-decoration {
-    box-shadow: 23px 23px 45px #bebebe, -23px -23px 45px #ffffff;
+    box-shadow: $parent-box-shadow;
     border-radius: 30px;
 }
 
 @mixin modal-wrapper-decoration {
     background-color: $soft-white-color;
-    border: 1px solid #666666;
+    border: 1px solid $hard-gray-color;
     border-radius: 20px;
-    box-shadow: 5px 5px 5px #666666;
+    box-shadow: $modal-box-shadow;
 }
 
 @mixin input-decorator {
@@ -18,7 +19,7 @@
     border-style: none;
     border-radius: 20px;
     background-color: $soft-white-color;
-    box-shadow: inset 5px 5px 4px #c1c1c1, inset -5px -5px 4px #ffffff;
+    box-shadow: $input-box-shadow;
     font-size: 13px;
 
     &:focus {
@@ -27,7 +28,7 @@
 }
 
 @mixin main-button {
-    box-shadow: 5px 5px 10px #bebebe, -5px -5px 10px #ffffff;
+    box-shadow: $button-box-shadow;
     padding: 10px 40px;
     border-radius: 20px;
     border-style: none;
@@ -35,21 +36,21 @@
     font-size: 14px;
 
     &:hover {
-        box-shadow: inset 5px 5px 4px #c1c1c1, inset -5px -5px 4px #ffffff;
+        box-shadow: $pressed-button-box-shadow;
         background-color: transparent;
         color: $soft-black-color;
     }
 }
 
 @mixin main-link {
-    box-shadow: 5px 5px 10px #bebebe, -5px -5px 10px #ffffff;
+    box-shadow: $button-box-shadow;
     padding: 10px 20px;
     border-radius: 20px;
     text-decoration: none;
     color: $hard-gray-color;
 
     &:hover {
-        box-shadow: inset 5px 5px 4px #c1c1c1, inset -5px -5px 4px #ffffff;
+        box-shadow: $pressed-button-box-shadow;
         color: $soft-black-color;
     }
 }

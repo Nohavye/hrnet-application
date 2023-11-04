@@ -1,0 +1,6 @@
+$parent-box-shadow: 23px 23px 45px #bebebe, -23px -23px 45px #ffffff;
+$modal-box-shadow: 5px 5px 5px #555555;
+$input-box-shadow: inset 5px 5px 4px #c1c1c1, inset -5px -5px 4px #ffffff;
+$button-box-shadow: 5px 5px 10px #bebebe, -5px -5px 10px #ffffff;
+$pressed-button-box-shadow: inset 5px 5px 4px #c1c1c1,
+    inset -5px -5px 4px #ffffff;
