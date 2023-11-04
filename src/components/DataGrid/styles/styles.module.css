@@ -1,4 +1,5 @@
 @import '../../../global/styles/mixins.css';
+@import '../../../global/styles/colors.css';
 
 .wrapper {
     display: flex;
@@ -12,7 +13,7 @@
 }
 
 .grid {
-    --ag-background-color: #e0e0e0;
+    --ag-background-color: $soft-white-color;
     --ag-borders: inset 5px;
     --ag-border-color: rgba(255, 255, 255, 0.3);
 }

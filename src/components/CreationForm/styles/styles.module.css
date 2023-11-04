@@ -1,4 +1,5 @@
 @import '../../../global/styles/mixins.css';
+@import '../../../global/styles/colors.css';
 
 .form {
     @include parent-wrapper-decoration;
@@ -12,7 +13,7 @@
 
     & h3 {
         align-self: flex-start;
-        color: #333333;
+        color: $soft-black-color;
     }
 }
 
@@ -35,7 +36,7 @@
     border-style: outset;
 
     & legend {
-        color: #555555;
+        color: $hard-gray-color;
         padding: 0 20px;
     }
 }

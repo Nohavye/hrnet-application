@@ -1,3 +1,6 @@
+@import '../../../global/styles/mixins.css';
+@import '../../../global/styles/colors.css';
+
 .wrapper {
     display: flex;
     justify-content: space-between;
@@ -5,7 +8,7 @@
     gap: 20px;
 
     & label {
-        color: #555555;
+        color: $hard-gray-color;
     }
 }
 
@@ -18,24 +21,12 @@
 }
 
 .dropdownInput {
-    padding: 10px 20px;
-    border-style: none;
-    border-radius: 20px;
-    box-shadow: inset 5px 5px 4px #c1c1c1, inset -5px -5px 4px #ffffff;
-    font-size: 12px;
-
-    &:focus {
-        border: 1px solid orange !important;
-    }
+    @include input-decorator;
 }
 
 .dropdownItemsWrapper {
-    background-color: #e0e0e0;
-    border: 1px solid #666666;
-    border-radius: 20px;
+    @include modal-wrapper-decoration;
     padding: 5px 20px;
-    box-shadow: 5px 5px 5px #888888;
-    scrollbar-color: #888888 transparent;
 }
 
 .dropdownItem {

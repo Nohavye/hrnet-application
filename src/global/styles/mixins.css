@@ -1,13 +1,29 @@
+@import './colors.css';
+
 @mixin parent-wrapper-decoration {
     box-shadow: 23px 23px 45px #bebebe, -23px -23px 45px #ffffff;
     border-radius: 30px;
 }
 
 @mixin modal-wrapper-decoration {
-    background-color: #e0e0e0;
+    background-color: $soft-white-color;
     border: 1px solid #666666;
     border-radius: 20px;
     box-shadow: 5px 5px 5px #666666;
+}
+
+@mixin input-decorator {
+    padding: 10px 20px;
+    outline: none;
+    border-style: none;
+    border-radius: 20px;
+    background-color: $soft-white-color;
+    box-shadow: inset 5px 5px 4px #c1c1c1, inset -5px -5px 4px #ffffff;
+    font-size: 13px;
+
+    &:focus {
+        border: 1px solid orange !important;
+    }
 }
 
 @mixin main-button {
@@ -15,13 +31,13 @@
     padding: 10px 40px;
     border-radius: 20px;
     border-style: none;
-    color: #555555;
+    color: $hard-gray-color;
     font-size: 14px;
 
     &:hover {
         box-shadow: inset 5px 5px 4px #c1c1c1, inset -5px -5px 4px #ffffff;
         background-color: transparent;
-        color: #333333;
+        color: $soft-black-color;
     }
 }
 
@@ -30,10 +46,10 @@
     padding: 10px 20px;
     border-radius: 20px;
     text-decoration: none;
-    color: #555555;
+    color: $hard-gray-color;
 
     &:hover {
         box-shadow: inset 5px 5px 4px #c1c1c1, inset -5px -5px 4px #ffffff;
-        color: #333333;
+        color: $soft-black-color;
     }
 }

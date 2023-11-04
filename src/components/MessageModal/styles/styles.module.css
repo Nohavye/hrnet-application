@@ -1,4 +1,5 @@
 @import '../../../global/styles/mixins.css';
+@import '../../../global/styles/colors.css';
 
 .wrapper {
     @include modal-wrapper-decoration;
@@ -11,7 +12,7 @@
     gap: 60px;
 
     & span {
-        color: #555555;
+        color: $hard-gray-color;
     }
 
     & button {
