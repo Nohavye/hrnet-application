@@ -3,7 +3,7 @@
     "private": false,
     "version": "0.1.0",
     "type": "module",
-    "description": "HRnet. Our company's internal application for creating and accessing employee records",
+    "description": "HRnet. Our company's internal application for creating and accessing employee records.",
     "scripts": {
         "dev": "vite",
         "build": "vite build",
