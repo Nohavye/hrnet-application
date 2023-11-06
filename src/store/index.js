@@ -3,14 +3,10 @@ import { configureStore } from '@reduxjs/toolkit'
 import { useSelector } from 'react-redux'
 
 // Features
-import { actions, reducers } from './features'
+import { actions, reducer } from './features'
 
 // Store
-export default configureStore({
-    reducer: {
-        employees: reducers.employees,
-    },
-})
+export default configureStore({ reducer })
 
 // Selectors
 const selectors = {

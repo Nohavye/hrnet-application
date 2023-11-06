@@ -10,8 +10,8 @@ import store from './store'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 // Pages
-import Home from './pages/home'
-import Employees from './pages/employees'
+import CreateEmployee from './pages/createEmployee'
+import EmployeeList from './pages/employeeList'
 
 // Components
 import Header from './components/Header'
@@ -27,8 +27,8 @@ ReactDOM.createRoot(document.getElementById('root')).render(
                 <Header />
                 <PageWrapper>
                     <Routes>
-                        <Route path="/" element={<Home />} />
-                        <Route path="/employees" element={<Employees />} />
+                        <Route path="/" element={<CreateEmployee />} />
+                        <Route path="/employees" element={<EmployeeList />} />
                     </Routes>
                 </PageWrapper>
             </BrowserRouter>

@@ -1,0 +1,178 @@
+[
+    {
+        "firstName": "John",
+        "lastName": "Doe",
+        "startDate": "01/15/2023",
+        "department": "Sales",
+        "dateofBirth": "05/20/1990",
+        "street": "123 Main Street",
+        "city": "New York",
+        "state": "NY",
+        "zipCode": "10001"
+    },
+    {
+        "firstName": "Jane",
+        "lastName": "Smith",
+        "startDate": "02/10/2023",
+        "department": "Engineering",
+        "dateofBirth": "08/12/1985",
+        "street": "456 Elm Street",
+        "city": "Los Angeles",
+        "state": "CA",
+        "zipCode": "90001"
+    },
+    {
+        "firstName": "Michael",
+        "lastName": "Johnson",
+        "startDate": "03/20/2023",
+        "department": "Marketing",
+        "dateofBirth": "04/30/1988",
+        "street": "789 Oak Avenue",
+        "city": "Chicago",
+        "state": "IL",
+        "zipCode": "60601"
+    },
+    {
+        "firstName": "Sarah",
+        "lastName": "Williams",
+        "startDate": "04/25/2023",
+        "department": "Engineering",
+        "dateofBirth": "11/15/1992",
+        "street": "567 Pine Road",
+        "city": "Houston",
+        "state": "TX",
+        "zipCode": "77001"
+    },
+    {
+        "firstName": "David",
+        "lastName": "Brown",
+        "startDate": "05/05/2023",
+        "department": "Sales",
+        "dateofBirth": "09/08/1987",
+        "street": "890 Cedar Lane",
+        "city": "Miami",
+        "state": "FL",
+        "zipCode": "33101"
+    },
+    {
+        "firstName": "Emily",
+        "lastName": "Davis",
+        "startDate": "06/12/2023",
+        "department": "Marketing",
+        "dateofBirth": "03/17/1986",
+        "street": "432 Birch Street",
+        "city": "Boston",
+        "state": "MA",
+        "zipCode": "02101"
+    },
+    {
+        "firstName": "Christopher",
+        "lastName": "Wilson",
+        "startDate": "07/07/2023",
+        "department": "Engineering",
+        "dateofBirth": "01/22/1991",
+        "street": "654 Willow Avenue",
+        "city": "San Francisco",
+        "state": "CA",
+        "zipCode": "94101"
+    },
+    {
+        "firstName": "Amanda",
+        "lastName": "Taylor",
+        "startDate": "08/18/2023",
+        "department": "Sales",
+        "dateofBirth": "06/25/1989",
+        "street": "321 Oak Street",
+        "city": "Philadelphia",
+        "state": "PA",
+        "zipCode": "19101"
+    },
+    {
+        "firstName": "William",
+        "lastName": "Martin",
+        "startDate": "09/30/2023",
+        "department": "Marketing",
+        "dateofBirth": "02/14/1995",
+        "street": "765 Elm Road",
+        "city": "Atlanta",
+        "state": "GA",
+        "zipCode": "30301"
+    },
+    {
+        "firstName": "Jessica",
+        "lastName": "Clark",
+        "startDate": "10/10/2023",
+        "department": "Engineering",
+        "dateofBirth": "07/09/1993",
+        "street": "543 Pine Lane",
+        "city": "Dallas",
+        "state": "TX",
+        "zipCode": "75201"
+    },
+    {
+        "firstName": "Robert",
+        "lastName": "Lee",
+        "startDate": "11/22/2023",
+        "department": "Sales",
+        "dateofBirth": "12/03/1984",
+        "street": "876 Cedar Street",
+        "city": "Seattle",
+        "state": "WA",
+        "zipCode": "98101"
+    },
+    {
+        "firstName": "Jennifer",
+        "lastName": "Gonzalez",
+        "startDate": "12/01/2023",
+        "department": "Marketing",
+        "dateofBirth": "10/28/1983",
+        "street": "234 Birch Lane",
+        "city": "Denver",
+        "state": "CO",
+        "zipCode": "80201"
+    },
+    {
+        "firstName": "Thomas",
+        "lastName": "Harris",
+        "startDate": "01/05/2024",
+        "department": "Engineering",
+        "dateofBirth": "06/20/1982",
+        "street": "789 Willow Street",
+        "city": "Phoenix",
+        "state": "AZ",
+        "zipCode": "85001"
+    },
+    {
+        "firstName": "Linda",
+        "lastName": "Martinez",
+        "startDate": "02/14/2024",
+        "department": "Sales",
+        "dateofBirth": "03/15/1981",
+        "street": "123 Oak Road",
+        "city": "Minneapolis",
+        "state": "MN",
+        "zipCode": "55401"
+    },
+    {
+        "firstName": "Daniel",
+        "lastName": "Young",
+        "startDate": "03/18/2024",
+        "department": "Marketing",
+        "dateofBirth": "07/10/1980",
+        "street": "456 Elm Lane",
+        "city": "Charlotte",
+        "state": "NC",
+        "zipCode": "28201"
+    },
+    {
+        "firstName": "Karen",
+        "lastName": "Adams",
+        "startDate": "04/20/2024",
+        "department": "Engineering",
+        "dateofBirth": "09/05/1979",
+        "street": "987 Pine Street",
+        "city": "Detroit",
+        "state": "MI",
+        "zipCode": "48201"
+    }
+]

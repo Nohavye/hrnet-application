@@ -7,6 +7,6 @@ export const actions = {
 }
 
 // Reducers
-export const reducers = {
+export const reducer = {
     employees: employees.reducer,
 }
