@@ -6,6 +6,8 @@ The application has been completely redesigned and now runs on [React](https://f
 
 The development project was initialized with [Vite](https://vitejs.dev/).
 
+_NOTE : This is a study project as part of the 'Front-end JavaScript React Application Developer' program at [OpenClassrooms](https://openclassrooms.com)._
+
 ## Development
 
 To get started with the development environment, follow these steps:
